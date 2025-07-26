@@ -13,7 +13,12 @@ const Homepage: React.FC<Props> = ({ list }) => {
             {list.map((item) => (
               <div className={style.postcontainer}>
                 <h2>{item.id}</h2>
-                <h3><Link href={`/posts/${item.id}`}>{item.title}</Link></h3>
+               <h3>
+            <Link href={`/posts/${item.id}`} className={style.link}>
+                {item.title}
+            </Link>
+          </h3>
+                <p>{item.body.split(" ").slice(0, 5).join(" ")}...</p>
               </div>
             ))}
         </div>

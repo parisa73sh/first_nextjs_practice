@@ -8,15 +8,29 @@
         flex-direction: column;
         border: 2px solid black;
         border-radius: 20px;
-        width: 200px;
-        height: 200px;
+        width: 500px;
+        height: auto;
         margin-bottom: 20px;
         text-align: center;
-        h1{
+        h3{
             font-size: 18px;
+            text-decoration: none;
         }
         p{
             font-size: 14px;
-        }
     }
+    }
+}
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+.link:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.link:visited {
+    text-decoration: none;
 }
